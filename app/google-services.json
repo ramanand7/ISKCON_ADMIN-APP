@@ -1,0 +1,127 @@
+{
+  "project_info": {
+    "project_number": "148424292315",
+    "firebase_url": "https://iskconrohini-dfb7b-default-rtdb.firebaseio.com",
+    "project_id": "iskconrohini-dfb7b",
+    "storage_bucket": "iskconrohini-dfb7b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148424292315:android:6c5f2745dc89cafc8359fe",
+        "android_client_info": {
+          "package_name": "com.example.adminiskon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148424292315-m7rk5qoui915brpfd8rekihq931f6eef.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCS-lXjeI7Sc9WridKJofug9LnEdmlCrA4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "148424292315-m7rk5qoui915brpfd8rekihq931f6eef.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148424292315:android:1c9e6d1bb09e7f908359fe",
+        "android_client_info": {
+          "package_name": "com.example.iskcon__admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148424292315-m7rk5qoui915brpfd8rekihq931f6eef.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCS-lXjeI7Sc9WridKJofug9LnEdmlCrA4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "148424292315-m7rk5qoui915brpfd8rekihq931f6eef.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148424292315:android:60b4057e150226ed8359fe",
+        "android_client_info": {
+          "package_name": "com.example.ram.ISKCONROHINI__"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148424292315-m7rk5qoui915brpfd8rekihq931f6eef.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCS-lXjeI7Sc9WridKJofug9LnEdmlCrA4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "148424292315-m7rk5qoui915brpfd8rekihq931f6eef.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148424292315:android:ce73c075f8285c098359fe",
+        "android_client_info": {
+          "package_name": "com.example.rohini_iskcon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148424292315-m7rk5qoui915brpfd8rekihq931f6eef.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCS-lXjeI7Sc9WridKJofug9LnEdmlCrA4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "148424292315-m7rk5qoui915brpfd8rekihq931f6eef.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
