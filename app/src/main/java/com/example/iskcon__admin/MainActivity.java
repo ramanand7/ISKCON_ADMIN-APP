@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     private StorageReference mStorageRef;
     private DatabaseReference mDatabaseRef;
     private StorageTask mUploadTask;
-    private Button videoButton;
+    private Button videoButton,audioButtons;
 
     String imageUrl;
     @Override
@@ -59,6 +59,16 @@ public class MainActivity extends AppCompatActivity {
         videoButton = findViewById(R.id.video_upload);
         mStorageRef = FirebaseStorage.getInstance().getReference("uploads");
         mDatabaseRef = FirebaseDatabase.getInstance().getReference("uploads");
+        audioButtons = findViewById(R.id.btn_audios);
+
+
+        audioButtons.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startaudioactivity();
+            }
+        });
+
 
         videoButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -90,11 +100,19 @@ public class MainActivity extends AppCompatActivity {
                 openImagesActivity();
             }
         });
+
+
     }
 
     private void startvideoactivity() {
         Intent intent = new Intent(this,Video1.class);
         startActivity(intent);
+
+    }
+
+    private void startaudioactivity() {
+        Intent intentt = new Intent(this,Audios_activity.class);
+        startActivity(intentt);
 
     }
 
@@ -170,41 +188,6 @@ public class MainActivity extends AppCompatActivity {
                             mProgressBar.setProgress((int) progress);
                         }
                     });
-/*
-*  final StorageReference reference=storageReference.child("uploads/"+ System.currentTimeMillis()+".pdf");
-        reference.putFile(filepath)
-                .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                    @Override
-                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
-                        reference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-                            @Override
-                            public void onSuccess(Uri uri) {
-
-                                model obj=new model(filetitle.getText().toString(),uri.toString(),0,0,0);
-                                databaseReference.child(databaseReference.push().getKey()).setValue(obj);
-
-                                pd.dismiss();
-                                Toast.makeText(getApplicationContext(),"File Uploaded", Toast.LENGTH_LONG).show();
-
-                                filelogo.setVisibility(View.INVISIBLE);
-                                cancelfile.setVisibility(View.INVISIBLE);
-                                imagebrowse.setVisibility(View.VISIBLE);
-                                filetitle.setText("");
-                            }
-                        });
-
-                    }
-                })
-                .addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
-                    @Override
-                    public void onProgress(UploadTask.TaskSnapshot taskSnapshot) {
-                        float percent=(100*taskSnapshot.getBytesTransferred())/taskSnapshot.getTotalByteCount();
-                        pd.setMessage("Uploaded :"+(int)percent+"%");
-                    }
-                });
-
-*/
 
 
         } else {

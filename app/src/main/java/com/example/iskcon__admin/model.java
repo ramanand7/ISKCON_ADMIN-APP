@@ -2,17 +2,19 @@ package com.example.iskcon__admin;
 
 public class model
 {
-    String filename, fileurl;
+    String filename, fileurl, imageuri;
 
 
     public model() {
     }
 
-    public model(String filename, String fileurl, int nod, int nol, int nov) {
+    public model(String filename, String fileurl, String imageuri) {
         this.filename = filename;
         this.fileurl = fileurl;
+        this.imageuri = imageuri;
 
     }
+
 
     public String getFilename() {
         return filename;
@@ -30,5 +32,11 @@ public class model
         this.fileurl = fileurl;
     }
 
+    public String getImageuri() {
+        return imageuri;
+    }
 
+    public void setImageuri(String imageuri) {
+        this.imageuri = imageuri;
+    }
 }

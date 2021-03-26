@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     tools:context=".MainActivity"
-    android:background="#1DE9B6"
+    android:background="#E9C71D"
     android:weightSum="10"
     android:orientation="vertical">
 
@@ -80,7 +80,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/button_upload"
         android:layout_marginTop="-0dp"
-        android:layout_weight="2"
+        android:layout_weight="4"
         android:orientation="horizontal">
 
         <Button
@@ -88,6 +88,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textSize="10dp"
             android:text="video" />
         <Button
             android:id="@+id/notification_upload"
@@ -95,7 +96,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="directtomessageactivity"
-            android:text="messages" />
+            android:textSize="10dp"
+            android:text="msg" />
 
         <Button
             android:id="@+id/button"
@@ -103,7 +105,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textSize="10dp"
             android:text="Pdf" />
+        <Button
+            android:id="@+id/btn_audios"
+            android:onClick="pdfActivitygo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:text="Audios" />
 
     </LinearLayout>
 </LinearLayout>

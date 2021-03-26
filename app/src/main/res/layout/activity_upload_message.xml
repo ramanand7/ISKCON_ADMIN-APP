@@ -4,39 +4,79 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1DE9B6"
+    android:background="#E9C71D"
     tools:context=".UploadMessage">
 
 
-    <EditText
-        android:id="@+id/messageedittext"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:ems="10"
-        android:inputType="textLongMessage"
-        android:hint="Message"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextDate"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="date"
-        android:hint="date"
+        android:background="@color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/messageedittext" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/save_message"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="publish message"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="474dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/messageedittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Message"
+                    android:textColor="#363A43"
+                    android:textColorHint="#7A8089"
+                    tools:ignore="MissingClass"
+
+
+                    />
+
+
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/editTextDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textColor="#363A43"
+                android:textColorHint="#7A8089"
+                tools:ignore="MissingClass" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/save_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:shadowRadius="5.0"
+                android:background="@color/purple_200"
+
+                android:text="Publish" />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
